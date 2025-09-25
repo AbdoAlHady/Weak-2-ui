@@ -74,8 +74,13 @@ class _MainViewState extends State<MainView> {
       PersistentBottomNavBarItem(
         icon: SvgPicture.asset(AppImages.imagesHome),
         title: ("Home"),
+        inactiveIcon: SvgPicture.asset(
+          AppImages.imagesHome,
+          colorFilter: ColorFilter.mode(Colors.grey, BlendMode.srcIn),
+        ),
         activeColorSecondary: Colors.white,
         activeColorPrimary: AppColors.primary,
+        inactiveColorPrimary: Colors.grey,
         textStyle: AppTextStyles.semiBold14.copyWith(color: Colors.white),
       ),
       PersistentBottomNavBarItem(

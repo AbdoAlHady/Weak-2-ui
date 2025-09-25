@@ -24,7 +24,10 @@ class TopAnimeListView extends StatelessWidget {
               hoverColor: Colors.grey,
 
               onTap: () {
-                Navigator.pushNamed(context, Routes.detailsMovieRoute);
+                Navigator.of(
+                  context,
+                  rootNavigator: true,
+                ).pushNamed(Routes.detailsMovieRoute);
               },
               child: Column(
                 children: [

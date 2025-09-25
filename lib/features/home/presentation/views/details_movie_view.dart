@@ -55,6 +55,7 @@ class DetailsMovieView extends StatelessWidget {
                   ],
                 ),
               ),
+              heightSpace(90),
             ],
           ),
         ),
